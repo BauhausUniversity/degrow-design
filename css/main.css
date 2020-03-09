@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css?family=Muli:300,300i,900,900i&display=swap&subset=latin-ext');
+
+body {
+  font-family: 'Muli', 'Helvetica Neue', Helvetica, sans-serif;
+  font-weight: 300;
+  margin-left: 1em;
+}
+
+header {
+  margin: 0;
+}
+
+input {
+  padding: 5pt 100pt;
+  font-size: 20pt;
+  width: 100%;
+  height: 30pt;
+  border-width: 0 0 2pt 0;
+  border-style: solid;
+  border-color: #000;
+}
+
+main {
+}
+
+p, ul {
+  margin: 1em 100pt;
+  line-height: 2em;
+}
+
+h1 {
+  font-size: 50pt;
+  color: #000;
+  text-transform: uppercase;
+}
+
+h1 a {
+  text-decoration: none;
+}
+
+ul {
+  padding-left: 0;
+  list-style-type: none;
+} 

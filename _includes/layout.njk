@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Bauhaus-Universität Weimar ">
+
+    <title>{{ metadata.title }}</title>
+
+    <script src="https://unpkg.com/lunr/lunr.js"></script>
+
+    <link rel="stylesheet" href="{{ '/css/main.css' | url }}" />
+    <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/img/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="/img/favicon.png"/>
+
+  </head>
+  <body>
+    <header>
+      <div id="title">
+        <a href="/"><h1>{{ metadata.title }}</h1></a>
+      </div>
+      <div id="meta">
+        {% for meta in collections.meta | reverse %}
+        <a href="{{ meta.url }}"><button>{{ meta.data.title }}</button></a>
+        {% endfor %}
+      </div>
+    </header>
+    <main>
+      <div id="main">
+        {{ content | safe }}
+      </div>
+    </main>
+    <footer>
+    <a href="https://www.uni-weimar.de/de/fs/impressum/">Impressum</a>
+    </footer>
+  </body>
+</html>
