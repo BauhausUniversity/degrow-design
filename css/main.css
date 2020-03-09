@@ -20,7 +20,9 @@ input {
   border-color: #000;
 }
 
-main {
+footer {
+  position: absolute;
+  bottom: 2em;
 }
 
 p, ul {
