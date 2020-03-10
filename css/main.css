@@ -62,6 +62,11 @@ h2 {
   text-transform: uppercase;
 }
 
+h3 {
+  font-size: 12pt;
+  font-weight: 900;
+}
+
 #author {
   font-style: italic;
 }
@@ -73,6 +78,7 @@ ul {
 
 p, ul, ol {
   line-height: 1.5em;
+  font-size: 12pt;
 }
 
 ol {
