@@ -4,6 +4,7 @@ body {
   font-family: 'Muli', 'Helvetica Neue', Helvetica, sans-serif;
   font-weight: 300;
   margin-left: 1em;
+  margin-top: 1em;
 }
 
 header {
@@ -14,12 +15,17 @@ main {
   margin-left: 8em;
   margin-bottom: 4em;
   width: 50%;
+  min-height: 100%;
+  padding-bottom: 2em;
 }
 
 footer {
   width: 100%;
+  height: 2em;
   position: relative;
+  margin-top: -2em;
   margin-bottom: 2.5%;
+  clear: both;
 }
 
 article div {
@@ -27,11 +33,13 @@ article div {
 }
 
 input {
+  background-color: #111;
+  color: #fff;
   font-family: 'Muli', 'Helvetica Neue', Helvetica, sans-serif;
   padding: 5pt 100pt;
   font-size: 20pt;
   width: 98vw;
-  height: 30pt;
+  height: 2em;
   margin-left: -8rem;
   border-width: 0 0 2pt 0;
   border-style: solid;
@@ -44,6 +52,7 @@ a {
 }
 
 h1 {
+  margin: 0 0 4rem 0;
   font-size: 50pt;
   color: #000;
   text-transform: uppercase;
@@ -62,6 +71,33 @@ ul {
   list-style-type: none;
 } 
 
-p, ul {
+p, ul, ol {
   line-height: 1.5em;
+}
+
+ol {
+  margin: 0;
+  padding-left: 1em;
+}
+
+hr {
+  color: #000 solid;
+}
+
+@media (max-width: 800px) {
+  h1 {
+    font-size: 50pt;
+  }
+
+  input {
+    margin: 0;
+    padding: 5pt 10pt;
+    width: 100%;
+  }
+
+  main {
+    margin: 0;
+    max-width: 100%;
+    width: 100%;
+  }
 }

@@ -3,7 +3,7 @@ layout: layout.njk
 ---
 
 <div id="app">
-	<input type="search" v-model="term" v-on:input="search">
+	<input type="search" placeholder="Suchen …" v-model="term" v-on:input="search">
 	<div v-if="results">
 		<ul>
 			<li v-for="result in results">

@@ -1,8 +1,17 @@
 const fs = require('fs');
 
 module.exports = function(eleventyConfig) {
+    let markdownIt = require('markdown-it');
+    let markdownItFootnote = require("markdown-it-footnote");
+    let options = {
+      html: true
+    };
+
     eleventyConfig.addPassthroughCopy('img');
     eleventyConfig.addPassthroughCopy('css');
+
+    let markdownLib = markdownIt(options).use(markdownItFootnote);
+    eleventyConfig.setLibrary("md", markdownLib);
   
     eleventyConfig.setBrowserSyncConfig({
       callbacks: {
