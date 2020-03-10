@@ -86,6 +86,10 @@ ol {
   padding-left: 1em;
 }
 
+img {
+  width: 100%;
+}
+
 hr {
   color: #000 solid;
 }
