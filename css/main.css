@@ -44,6 +44,8 @@ input {
   border-width: 0 0 2pt 0;
   border-style: solid;
   border-color: #000;
+  -webkit-border-radius:0; 
+  border-radius:0;
 }
 
 a {
