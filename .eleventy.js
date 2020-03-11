@@ -12,6 +12,14 @@ module.exports = function(eleventyConfig) {
 
     let markdownLib = markdownIt(options).use(markdownItFootnote);
     eleventyConfig.setLibrary("md", markdownLib);
+
+    eleventyConfig.addCollection("articles", (collection) =>
+      collection.getFilteredByGlob("articles/*.md").sort((a, b) => {
+        if (a.data.id > b.data.id) return 1;
+        else if (a.data.id < b.data.id) return -1;
+        else return 0;
+      })
+    );
   
     eleventyConfig.setBrowserSyncConfig({
       callbacks: {
