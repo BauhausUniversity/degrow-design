@@ -14,7 +14,7 @@ layout: layout.njk
     <div v-else>
 		    <ul id="index">
                 {% for article in collections.articles %}
-                    <li class="indexList"><a href="{{ article.url }}">#{{ article.data.id }} {{ article.data.title }}</a></li>
+                    <li class="indexList"><a href="{{ article.url }}"><span class="number">#{{ article.data.id }}</span> {{ article.data.title }}</a></li>
                 {% endfor %}
             </ul>
 		</p>
