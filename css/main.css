@@ -111,7 +111,7 @@ hr {
   font-weight: 900;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
   h1 {
     font-size: 50pt;
   }
