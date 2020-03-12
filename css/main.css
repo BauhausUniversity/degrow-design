@@ -114,7 +114,6 @@ hr {
 @media (max-width: 800px) {
   h1 {
     font-size: 50pt;
-    padding-left: 10px;
   }
 
   input {
@@ -142,7 +141,7 @@ hr {
   }
 
   article div {
-    width: 100%;
+    width: 90%;
     margin: 0 10px;
   }
 
