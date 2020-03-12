@@ -7,7 +7,7 @@ layout: layout.njk
 	<div v-if="results">
 		<ul>
 			<li v-for="result in results">
-				<a :href="result.url"> {% raw %} #{{result.articleId}} {{ result.title }}{% endraw %}</a>
+				<a :href="result.url"> {% raw %} <span class="number">#{{result.articleId}}</span> {{ result.title }}{% endraw %}</a>
 			</li>
 		</ul>
     </div>
