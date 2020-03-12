@@ -22,7 +22,7 @@ main {
 
 footer {
   width: auto;
-  height: 1em;
+  height: 2em;
   position: relative;
   background-color: #eee;
   margin-top: -2em;
@@ -114,26 +114,45 @@ hr {
 @media (max-width: 800px) {
   h1 {
     font-size: 50pt;
+    padding-left: 10px;
   }
 
   input {
     margin: 0;
     padding: 5pt 10pt;
-    width: 100%;
+    max-width: 100%;
   }
 
   main {
+    padding: 0;
     margin: 0;
-    padding: 0 10px;
-    max-width: 100%;
     width: 100%;
   }
 
   footer {
+    height: 100%;
     padding-left: 20px;
+    margin-top: 0;
+  }
+
+
+  footer p {
+    margin: 0;
+    padding: 1em 0 0 0;
   }
 
   article div {
     width: 100%;
+    margin: 0 10px;
+  }
+
+  .articlelist {
+    position: relative;
+    width: 90%;
+  }
+
+  #app {
+    width: 100%;
+    margin: 0 10px;
   }
 }

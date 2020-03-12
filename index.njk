@@ -4,14 +4,14 @@ layout: layout.njk
 
 <div id="app">
 	<input type="search" placeholder="Suchen …" v-model="term" v-on:input="search">
-	<div v-if="results">
+	<div class="articlelist" v-if="results">
 		<ul>
 			<li v-for="result in results">
 				<a :href="result.url"> {% raw %} <span class="number">#{{result.articleId}}</span> {{ result.title }}{% endraw %}</a>
 			</li>
 		</ul>
     </div>
-    <div v-else>
+    <div class="articlelist" v-else>
 		    <ul id="index">
                 {% for article in collections.articles %}
                     <li class="indexList"><a href="{{ article.url }}"><span class="number">#{{ article.data.id }}</span> {{ article.data.title }}</a></li>

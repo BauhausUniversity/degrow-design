@@ -6,7 +6,6 @@ layout: layout.njk
   <div>
     <h2 id="workTitle">{{ title }}</h2>
     <p id="author">{{ author }}</p>
+    {{ content | safe }}
   </div>
 </article>
-
-{{ content | safe }}
