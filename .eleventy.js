@@ -1,4 +1,5 @@
 const fs = require('fs');
+const lazyImagesPlugin = require('eleventy-plugin-lazyimages');
 
 module.exports = function(eleventyConfig) {
     let markdownIt = require('markdown-it');
@@ -9,6 +10,10 @@ module.exports = function(eleventyConfig) {
 
     eleventyConfig.addPassthroughCopy('img');
     eleventyConfig.addPassthroughCopy('css');
+
+    eleventyConfig.addPlugin(lazyImagesPlugin, {
+      imgSelector: 'article img',
+    });
 
     let markdownLib = markdownIt(options).use(markdownItFootnote);
     eleventyConfig.setLibrary("md", markdownLib);
