@@ -8,10 +8,12 @@ module.exports = function(eleventyConfig) {
       html: true
     };
 
-    eleventyConfig.addPlugin(lazyImagesPlugin);
-
     eleventyConfig.addPassthroughCopy('img');
     eleventyConfig.addPassthroughCopy('css');
+
+    eleventyConfig.addPlugin(lazyImagesPlugin, {
+      imgSelector: 'article img'  
+    });
 
     let markdownLib = markdownIt(options).use(markdownItFootnote);
     eleventyConfig.setLibrary("md", markdownLib);
