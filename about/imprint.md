@@ -13,7 +13,7 @@ Geschwister-Scholl-Straße 8
 
 Bauhaus-Universität Weimar   
 Jun.-Prof. Dr. Alexandra Toland  
-Geschwister-Scholl-Straße 8  
+Geschwister-Scholl-Straße 7  
 99423 Weimar
 
 Als Diensteanbieter sind wir gemäß § 7 Abs.1 TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 TMG sind wir als Diensteanbieter jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen.
