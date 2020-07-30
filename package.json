@@ -12,7 +12,7 @@
   "license": "ISC",
   "devDependencies": {
     "@11ty/eleventy": "^0.11.0",
-    "eleventy-plugin-lazyimages": "^1.1.2"
+    "eleventy-plugin-lazyimages": "^2.0.1"
   },
   "dependencies": {
     "markdown-it": "^11.0.0",
