@@ -16,7 +16,6 @@
   },
   "dependencies": {
     "markdown-it": "^11.0.0",
-    "markdown-it-footnote": "^3.0.2",
-    "npm-check-updates": "^7.0.3"
+    "markdown-it-footnote": "^3.0.2"
   }
 }
