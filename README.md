@@ -5,6 +5,6 @@
 Website featuring scientific and artistic contributions on Degrowth.
 
 Wissenschaftsmodul “Degrowth Design”  
-Jun.-Prof. Dr. Alexandra Toland, Antonia Ney, Joy-Fabienne Lösel
+Jun.-Prof. Dr. Alexandra Toland, Antonia Ney, Joy-Fabienne Lösel  
 Bauhaus-Universität Weimar  
 2020
